@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <header>
+      <div class="exit" id="exit">X</div>
+      <input type="text" readonly value="1000" id="m">
+  </header>
+
+  <main>
+
+
+    <div class="game" id="g1">
+      <div class="img">💎</div>
+      <p>Mines</p>
+      <button id="game1">Zagraj</button>
+    </div>
+
+    <div class="game" id="g2">
+      <div class="img">🎰</div>
+      <p>Slots</p>
+      <button id="game2">Zagraj</button>
+    </div>
+
+    <div class="game" id="g3">
+      <div class="img">🪙</div>
+      <p>Coin flip</p>
+      <button id="game3">Zagraj</button>
+    </div>
+
+    <div class="bomby" id="bb">
+      <main>
+        <div class="left">
+            <div class="h">
+              <p>Wysokośc zakładu</p>
+              <input type="number" min="0.01" id="bet" value="1">
+            </div>
+            <div class="h">
+              <p>Ilość bomb</p>
+              <select name="" id="bomb">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+              </select>
+            </div>
+            <div class="h">
+              <p>Obecny mnożnik</p>
+              <input type="text" readonly id="mn" value="1x">
+            </div>
+            <div class="h btns">
+              <button id="StartGame">Zagraj</button>
+              <button id="cashOut">Cash out</button>
+            </div>
+        </div>
+        <div class="right">
+          <div class="tiles" id="t">
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="slots" id="slots">
+      <p>🎰SLOT🎰</p>
+      <div class="main">
+        <div class="slot" id="leftSlot">
+          <span>🍇</span>
+        </div>
+        <div class="slot" id="centerSlot">
+            <span>🍇</span>
+        </div>
+        <div class="slot" id="rightSlot">
+            <span>🍇</span>
+        </div>
+      </div>
+      <footer>
+        <select name="" id="slotBet">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="50">50</option>
+          <option value="100">100</option>
+          <option value="200">200</option>
+          <option value="500">500</option>
+          <option value="1000">1000</option>
+        </select>
+      <button id="sPlay">Spin</button>
+      </footer>
+
+
+    </div>
+
+    <div class="coinflip" id="CoinFlip">
+      <main>
+        <div class="left">
+          <p>Wysokośc zakładu</p>
+          <input type="number" min="0.01" id="betCoinFlip" value="1">
+          <div class="btnChoise">
+            <button id="h">Heads🪙</button>
+            <button id="t2">Tails🔺</button>
+          </div>
+          <button id="betCoinBtn">Postaw</button>
+        </div>
+        <div class="right">
+          <div class="coinGameBoard">
+          <div class="coin" id="coin">🦅</div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </main>
+
+  
+  <script src="j.js" defer></script>
+</body>
+</html>
